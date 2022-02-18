@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.ViewReportActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/backID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back_image"
+            android:background="@drawable/round_shape"
+            android:backgroundTint="#D500F9"
+            android:tint="#fff"
+            android:padding="8dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="8dp"
+        android:textSize="20dp"
+        android:textColor="#FF1744"
+        android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FF1744"
+        android:layout_marginTop="5dp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Function Tital"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:textSize="20dp"
+                android:textColor="#FF3D00"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/funID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#FF3D00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="#FF3D00"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/ddID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Job"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:textSize="18dp"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#FF3D00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Members"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="#FF3D00"
+                android:textStyle="bold" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvstudentlistID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:listitem="@layout/rv_student_layout"
+                tools:itemCount="5" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#FF3D00"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Images"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:gravity="start"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="#FF3D00"
+                android:textStyle="bold" />
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/imageID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/rv_image"
+                tools:itemCount="5" />
+
+
+            <TextView
+                android:id="@+id/submitedatabaseID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="12dp"
+                android:textColor="#fff"
+                android:backgroundTint="#FF3D00"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_margin="10dp"
+                android:text="Submit DataBase"
+                android:background="@drawable/btn_sape" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
